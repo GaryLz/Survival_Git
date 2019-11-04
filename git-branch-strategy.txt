@@ -1,0 +1,31 @@
+
+you had known one mode of merging,
+let me introduce another one.
+
+	merge --no-ff    (forbid Fast-forward)
+	
+need to mention that,
+the cmd--
+	git --no-ff -m "merge without ff"
+the process includes two, one for merge, the other for a new commit.
+
+
+========================
+
+<note> here,
+
+Gernally, the branch "master" is used to release a new version,
+in other words, it's really stable, compared with other branches.
+
+
+i.e.
+when releasing a 1.0-version, 
+you need to merge related branches with the mojor branch-"master".
+
+when co-coding in a project with colleagues or co-workers,
+you guys all work based on a branch like "dev",
+and everyone all have their own branch,
+to commit your contributions.
+In the end, you could easily integrate into a final release on the branch "master". 
+
+ 

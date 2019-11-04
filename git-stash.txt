@@ -1,0 +1,31 @@
+
+- fix bugs 
+
+when you get a task from your boss to fix a bug,
+however, your work at hand still need one more day,
+you can't commit and stop your work right away,
+and go fixing another bug.
+
+- how do you do?
+- Luckily, git leaves us another way out.
+cmd---
+	git stash
+this can save up your current work, keeps your process of task.
+let you free of work at hand, and go focus on another rushy task.
+
+after making up for the bug,
+you can come back and continue your work.
+
+--git stash list
+	--to see your recent backup
+
+-- two ways of restoration
+
+--1. includes two steps
+-git stash apply --stash@{}
+-git stash drop --stash@{} /to delete related backup
+
+--2. one step is enough
+-git stash pop. /pop up
+
+

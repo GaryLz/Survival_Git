@@ -1,0 +1,101 @@
+== DIY your git ==
+to ignore some special files.
+
+#solution
+set up a specific `.gitignore`file,
+you can refer to https://github.com/github/gitignore
+
+rules of ignorance
+1. ignore some files that OS system generates,
+2. continue ignore some files that Python compiles,
+3. add up some files that you define
+e.g.
+```
+#window 
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Python
+*.py[cod]
+*.so
+*.egg
+*.egg-info
+dist
+build
+
+# My configurations:
+db.ini
+deploy_key_rsa
+
+```
+
+how to test/examine
+git status
+- working directory clean
+
+.gitignore files,
+will be putting into repository
+
+
+#configuration
+to DIY cmd
+
+e.g.
+to alias `git status` a new cmd `git st`
+
+```
+git config --global alias.st status
+
+now you can type 
+`git st` --> `git status`
+
+--global:
+a whole-while parameter, that can apply to all git repositiry in the local computer
+
+
+another e.g
+`git reset HEAD file` -unstage
+
+to configure
+`git config --global alias.unstage `reset HEAD`
+and to type
+`git unstage test.py
+
+git config --global alias.last `log -l`
+--> 
+git last
+
+or `git config --glb=obal alias.lg "log --graph --pretty=oneline --abbrev-commit
+
+#another-step
+to add a line of code `--global` to `.git/config` --config files
+
+cat .git/config
+cat .gitconfig  //in users/yourname/.gitconfig 
+--the current usr
+
+##SetUpGitServer
+- sudo
+- sudo apt-get install git
+- sudo adduser git //to set up a new user-git
+- set up login--certificate  //collect infos of all users that need to login
+// id_rsa.pub, put all of public-key in the `.pub` files,
+// to /home/git/..sh/authorized_keys, format-one key per line.
+- intial git repository
+  - sudo git init --bare sample.git
+  - sudo chown -R git:git sample.git
+- forbiden login by shell
+// by editing /etc/passwd file
+ FROM: git:x:1001:1001:,,,:/home/git:/bin?bash
+ TO:   git:x:1001:1001:,,,:/home/git:/usr/bin/git-shell
+- git clone all files of the remote
+``
+git clone git@server:/srv/sample.git
+
+`` 
+ 
+git-official website: https://git-scm.com
+
+
+

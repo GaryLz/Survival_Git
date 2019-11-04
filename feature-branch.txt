@@ -1,0 +1,12 @@
+
+
+--feature branches--
+
+	if build up a new feature,
+	better to set up a new branch.
+
+	developing the feature based on that branch.
+
+IF you wanna to delete an uncompleted feature branch,
+--cmd 
+	git branch -D <branch-name>

@@ -1,0 +1,8 @@
+
+
+
+if you wanna clone a existing repository to the local,
+	use cmd: git clone 
+
+it also supports a variety of protocols, whick would impact on the transmission of data,
+like, ssh, htpps, git

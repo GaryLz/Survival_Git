@@ -1,0 +1,12 @@
+
+
+build branch and switch to it
+
+-set up a branch "dev"
+
+--cmd
+	git checkout -b dev
+==1. git branch	dev 
+  2. git checkout 'dev'
+
+

@@ -1,0 +1,18 @@
+
+
+git reset HEAD readme.txt
+
+-- to unstage files in the index.
+
+
+
+<note>
+2. git reset
+
+- to track back  --file
+
+- to unstage HEAD.
+
+1. git checkout --readme.txt
+
+--to discard changes in working directory.

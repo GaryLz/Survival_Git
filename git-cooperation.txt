@@ -1,0 +1,22 @@
+--note here--
+
+1. git push origin branch-name
+to commit your local commits
+
+2. if commits fail, that's because the remote has been updated,
+so try, git pull, to merge.
+
+3. if conficts exit while merging, first deal with it and commit to the local.
+
+4. without conflict, push succeeds after tying "git push origin branch-name"
+
+
+after git pull, notify  
+
+git remote -v
+to see info about the remote
+
+to set up tracking information
+git branch --set-upstream branch-name origin/branch-name
+
+

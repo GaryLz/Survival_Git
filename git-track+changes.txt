@@ -1,0 +1,74 @@
+gary@gary-Rev-1-0:~/learngit$ cat readme.txt
+
+
+Git is a distributed version control system.
+
+Git is a free software disturbuted under the GPL.
+
+Git has a mutable index called stage.
+
+Git tracks changes. changes.
+
+
+
+gary@gary-Rev-1-0:~/learngit$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   readme.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+
+gary@gary-Rev-1-0:~/learngit$ git diff readme.txt
+diff --git a/readme.txt b/readme.txt
+index a13d804..10dfa9d 100644
+--- a/readme.txt
++++ b/readme.txt
+@@ -6,4 +6,4 @@ Git is a free software disturbuted under the GPL.
+ 
+ Git has a mutable index called stage.
+ 
+-Git tracks changes.
++Git tracks changes of files.
+
+
+
+gary@gary-Rev-1-0:~/learngit$ git diff HEAD readme.txt
+diff --git a/readme.txt b/readme.txt
+index a13d804..10dfa9d 100644
+--- a/readme.txt
++++ b/readme.txt
+@@ -6,4 +6,4 @@ Git is a free software disturbuted under the GPL.
+ 
+ Git has a mutable index called stage.
+ 
+-Git tracks changes.
++Git tracks changes of files.
+
+
+
+
+gary@gary-Rev-1-0:~/learngit$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   readme.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+gary@gary-Rev-1-0:~/learngit$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   readme.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")

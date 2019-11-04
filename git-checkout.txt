@@ -1,0 +1,7 @@
+
+
+git checkout --readme.txt
+
+let the file come back to the newest/current status.
+
+like, the status after git commit/git add 

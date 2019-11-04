@@ -1,0 +1,12 @@
+===github===
+- how to join in a OpenSource project?
+- using your own account, clone it as a resposity in your desposity.
+
+============
+
+--pull request,
+to apply for a request
+to let the owner of the original project
+to accept your ideas and push your commit to his/her projects.
+
+

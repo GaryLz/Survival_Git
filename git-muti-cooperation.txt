@@ -1,0 +1,92 @@
+
+--muti-coperation--
+
+git remote 
+	--to see the name of remote repository 
+
+git remote -v 
+	--to see more specific info, like push, fetch
+
+
+
+----
+
+1. if push the local branch
+
+-- git push origin master  
+	(origin--the default name of remote repos)
+	
+	'master' to specific which branch of local repository you wanna push to remote repos.
+
+another example, git push origin dev
+
+
+2. appendix
+
+which local branches most needed to push
+
+- master. the mojor branch
+
+- dev. the developing branch, all of team members need to work on that branch
+
+- bug. it's ususally used to fix bugs on the local depository. Unless your boss wanna see how many bugs you fix every week?
+
+- feature. it depends on you if develop features with your buddys.
+
+3. get remote branch
+
+while cooperating with others, usually we would push each other's commit to branch `master` and `dev`.
+
+like assured, your buddy work with another computer, or you wanna clone the project to another local desposity.
+
+git clone https://github/GaryLz/learngit.git
+
+`to test` 
+--git branch 
+* master
+
+just what it said above,
+as default, the branch that's cloned to your computer, is origin/master
+ 
+then, you buddy wanna to develop on the branch `dev`
+--
+git checkout -b dev origin/dev
+--
+(seems to unvalid)
+
+
+to push commit to the local `dev`
+--
+git commit -m "add /usr/bin/env"
+--
+
+to push to the remote
+--
+git push origin dev
+--
+
+A oroblem that will probably exist:
+what if you also commit to the remote after you buddys just committing,
+
+``
+git pull
+--
+to update your local deposity
+
+what if `git pull` failed too,
+
+the problem is you didn't specify which branch you want to merge with.
+that means, that the `dev` need to track remote branch from origin
+
+``
+git branch --set-upstream dev origin/dev
+``
+then ENTER
+``
+git pull
+``
+
+but after that, if merging error exists, 
+need to solve it by yourself.
+
+

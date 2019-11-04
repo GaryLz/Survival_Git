@@ -1,0 +1,18 @@
+
+
+repository
+
+- stage(index)- temporary storehouse
+- commit-->one of branch,like "master:
+
+
+
+
+like cmd
+
+- git add -->stage
+
+- git commit -->master
+
+
+

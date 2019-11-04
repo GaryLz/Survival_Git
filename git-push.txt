@@ -1,0 +1,9 @@
+
+
+need to link to a remote repository,
+
+use command line: --to push
+	git push -u first master --first time
+		(after that) git push first master
+
+

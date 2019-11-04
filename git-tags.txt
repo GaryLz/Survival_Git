@@ -1,0 +1,64 @@
+to tag while releasing a new version of project
+
+why should we do that?
+'cause it's like taking a screenshot while ready for release,
+it can be much easier to find exactly the version we want.
+
+
+```
+git branch
+*dev
+
+git checkout master
+
+--to list all of tags
+git tag
+--
+
+--what if forgeting to tag a should-to-be-tagged files
+
+git log --pretty=oneline --abbrev-commit
+
+--to check the commit_id in history of commits
+e.g. 6224937
+
+git tag v0.9 6224937
+
+$ git tag
+v0.9
+v1.0
+
+the sequence of tag list, is based on alphabetical rules.
+
+```
+-a tag-name -m --message
+
+git tag -a v0.1 -m "version 0.1 released" 3628164
+git show v0.1
+
+```
+
+what if make a false tag,
+--you could delete it--
+git tag -d v0.1
+
+because the tags are saved up in the local,
+it can't push them automatically to the remote,
+so, you can delete the wrong tags in the local.
+
+
+```
+git push origin <tagname>
+```
+only push the expected tag to the remote
+
+======
+what if we push the wrong to the remote,
+1. delete it in the local
+git tag -d v0.9
+2. delete it from the remote
+git push origin :refs/tags/v0.9
+======
+
+
+

@@ -1,0 +1,34 @@
+
+- git merge
+
+there are several ways to merge.
+
+	- 'Fast-forwards' mode
+	- ...
+
+- git checkout master
+
+- git merge dev
+- git branch -d dev  --delete
+
+
+<note>:
+
+1. check out branches and the current branch
+	--git branch
+
+2. set up a new branch 
+	--git branch <name>
+
+3. switch to a branch
+	--git ckeckout <name>
+
+4. set up and switch to a new branch
+	--git checkout -b <name>
+
+5. merge and switch to the current branch
+	--git merge <name>
+
+6. delete a branch
+	--git branch -d <name>
+	

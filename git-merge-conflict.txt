@@ -1,0 +1,53 @@
+
+when Git can't finish auto-merge process,
+we need to solve the conflict by ourselves.
+
+- first try to merge, 
+- after notified the merge conflict,
+- we need to vim the file manually.
+- and do the normal process-add-commit
+- -m "conflict solved".
+- don't forget to delete the other extra branches. 
+- OVER.
+
+
+
+
+	git log --graph  
+--to see the graph of the whole merging process.
+
+like in the example;
+	git log --grah--pretty=oneline --abbrev-commit
+
+
+
+gary@gary-Rev-1-0:~/learngit$ git log --graph --pretty=oneline
+*   114852c74a0523579147996fe5a7e095068842d2 conflict solved
+|\  
+| * cb7c4a189e84d5a757dd5841c72d14251aee2881 & simple
+* | f92ba08e52970e4b234c87397fc4f8842a9a9d68 and simple
+|/  
+* e5fb41731ba93e9f9c9a4c42b31d5d817df71233 branch text
+* 8fded901dcfc86c49772698a2eb44e7726b365ba commit new file LICENSE
+* 01282433b8623dd99496e54324152c8ee5c4a99c append GPL
+* ecfc568163ec678fea3a0fd072232bf07c146578 new changes
+* f1e22f218d9ac3179785d6b68041ae60b54a7296 wrote a readme file
+
+
+
+
+gary@gary-Rev-1-0:~/learngit$ git log --graph --pretty=oneline --abbrev-commit
+*   114852c conflict solved
+|\  
+| * cb7c4a1 & simple
+* | f92ba08 and simple
+|/  
+* e5fb417 branch text
+* 8fded90 commit new file LICENSE
+* 0128243 append GPL
+* ecfc568 new changes
+* f1e22f2 wrote a readme file
+
+
+
+
